@@ -1,4 +1,4 @@
-NAME = ClapTrap
+NAME = scavtrap
 
 RED = \033[0;31m
 GREEN = \033[0;32m
@@ -10,7 +10,7 @@ CFLAGS = -Wall -Werror -Wextra -std=c++98 -I includes
 SRC_DIR = src/
 OBJ_DIR = obj/
 
-SRC =	$(addprefix $(SRC_DIR), main.cpp ClapTrap.cpp)
+SRC =	$(addprefix $(SRC_DIR), main.cpp ScavTrap.cpp ClapTrap.cpp)
 OBJS = $(SRC:$(SRC_DIR)%.cpp=$(OBJ_DIR)%.o)
 
 all: $(NAME)
